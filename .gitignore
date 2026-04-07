@@ -4,3 +4,9 @@
 *-backups/
 fp-info-cache
 _autosave*
+
+project_files/Ohmsprint.kicad_prl
+project_files/design-block-lib-table
+project_files/sym-lib-table
+project_files/.history/
+Ohmsprint-backups/
