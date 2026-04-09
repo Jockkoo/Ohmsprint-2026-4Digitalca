@@ -6,6 +6,7 @@
 #include "esp_gap_ble_api.h"
 #include "esp_gatts_api.h"
 #include "esp_log.h"
+#include "esp_random.h"
 #include "nvs_flash.h"
 #include "util/ints.h"
 
@@ -56,6 +57,8 @@ static struct g {
     u16 char_handle;
     u16 notify_handle;
     i32 conn_id;
+
+    TaskHandle_t notif_task_handle;
 } g;
 
 static void
@@ -136,13 +139,39 @@ handle_read(esp_gatt_if_t gatts_if, struct gatts_read_evt_param *param) {
 }
 
 static void
+task(void *arg) {
+    while(1) {
+        u16 val = (uint16_t)(6500 + (esp_random() % 1001));
+        ESP_ERROR_CHECK(
+                esp_ble_gatts_send_indicate(g.gatts_if, g.conn_id, g.char_handle, sizeof(val), (u8 *)&val, false));
+        vTaskDelay(200);
+    }
+}
+
+static void
+setup_notif(void) {
+    ESP_LOGI(TAG, "notifications enabled");
+
+    assert(xTaskCreate(task, "handle_notif", 4096, NULL, 1, &g.notif_task_handle));
+}
+
+static void
+delete_notif(void) {
+    ESP_LOGI(TAG, "notifications disabled");
+
+    vTaskDelete(g.notif_task_handle);
+    g.notif_task_handle = NULL;
+}
+
+static void
 handle_write(esp_gatt_if_t gatts_if, struct gatts_write_evt_param *param) {
     if(param->handle == g.notify_handle && param->len == 2) {
+        // enabled notifications
         u16 descr_value = param->value[1] << 8 | param->value[0];
         if(descr_value == 0x0001) {
-            ESP_LOGI(TAG, "notifikacije uključene");
+            setup_notif();
         } else if(descr_value == 0x0000) {
-            ESP_LOGI(TAG, "notifikacije isključene");
+            delete_notif();
         }
     }
 
@@ -207,6 +236,9 @@ handle_connect(esp_gatt_if_t gatts_if, struct gatts_connect_evt_param *param) {
 static void
 handle_disconnect(esp_gatt_if_t gatts_if, struct gatts_disconnect_evt_param *param) {
     g.conn_id = -1;
+    if(g.notif_task_handle) {
+        delete_notif();
+    }
 
     // start advertising again
     ESP_ERROR_CHECK(esp_ble_gap_start_advertising(&adv_params));
