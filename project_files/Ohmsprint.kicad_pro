@@ -582,12 +582,48 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -640,7 +676,7 @@
         "uuid": "7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
       }
     ],
-    "used_designators": "L1,C1-3,C6-7,C9-11,C20,C25,C27-30,#PWR11-12,#PWR14-16,#PWR19-20,#PWR27,#PWR32-33,#PWR39-40,#PWR42,#PWR49,#PWR53-57,JP1-2,JP4-9,R6-10,R28-33,U1-3,U6,DS1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
