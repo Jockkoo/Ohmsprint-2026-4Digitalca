@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { useDark, useToggle } from '@vueuse/core'
 import { Label } from '@/components/ui/label'
 import { Switch } from '@/components/ui/switch'

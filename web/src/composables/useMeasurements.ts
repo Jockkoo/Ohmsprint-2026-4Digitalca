@@ -14,7 +14,7 @@ export function useVoltageTrack() {
 
     const newData = {
       time: timeStr,
-      voltage: newVoltage
+      voltage: newVoltage,
     }
 
     // Dodajemo podatak i držimo listu fiksne dužine radi performansi
@@ -23,7 +23,7 @@ export function useVoltageTrack() {
 
   onMounted(() => {
     // Inicijalni podaci
-    for(let i=0; i<5; i++) generateData()
+    for (let i = 0; i < 5; i++) generateData()
 
     // Simulacija API-ja na svaku sekundu
     timer = setInterval(generateData, 1000)
