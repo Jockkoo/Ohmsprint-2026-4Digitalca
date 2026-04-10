@@ -7,6 +7,7 @@
 #include "esp_gatts_api.h"
 #include "esp_log.h"
 #include "esp_random.h"
+#include "freertos/idf_additions.h"
 #include "nvs_flash.h"
 #include "util/ints.h"
 
@@ -103,7 +104,7 @@ static void
 handle_reg(esp_gatt_if_t gatts_if, struct gatts_reg_evt_param *param) {
     g.gatts_if = gatts_if;
 
-    // todo: should this go here?
+    // TODO: should this go here?
     ESP_ERROR_CHECK(esp_ble_gap_set_device_name("ESP32"));
     ESP_ERROR_CHECK(esp_ble_gap_config_adv_data(&adv_data));
 

@@ -7,4 +7,3 @@ import Dashboard from '@/components/Dashboard.vue'
   <Header />
   <Dashboard />
 </template>
-
