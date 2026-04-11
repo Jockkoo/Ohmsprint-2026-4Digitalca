@@ -618,6 +618,24 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part Number",
+          "name": "Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MNF",
+          "name": "MNF",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -676,7 +694,7 @@
         "uuid": "7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
       }
     ],
-    "used_designators": "",
+    "used_designators": "H1,SW2-4,U3,D3-4,C2,C33-34,R8,R29-30,R34,#PWR45,#PWR60,#PWR64-72,J2,J5-6",
     "variants": []
   },
   "sheets": [
