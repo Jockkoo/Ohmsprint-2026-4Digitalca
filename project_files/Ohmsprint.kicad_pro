@@ -541,7 +541,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "BOM_ver1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -557,7 +557,7 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Reference",
           "name": "Reference",
           "show": true
@@ -581,16 +581,16 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -647,13 +647,13 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "MPN",
           "name": "MPN",
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "MNF",
           "name": "MNF",
           "show": true
@@ -721,7 +721,7 @@
         "uuid": "7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
       }
     ],
-    "used_designators": "C7,Q3,#PWR20,#PWR66,#PWR75-76,#PWR83,R6,R11,R22,R60-63",
+    "used_designators": "R6,R12-15,R23,R42,R64",
     "variants": []
   },
   "sheets": [

@@ -14762,16 +14762,6 @@
 		)
 		(uuid "10297887-7e43-47a0-a525-c042c88c6f2a")
 	)
-	(text "mnp"
-		(exclude_from_sim no)
-		(at 88.646 112.522 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "126c26d0-6e79-4995-8240-3170d69e3fc1")
-	)
 	(text "Alternative: \nAMS1117-3.3\nMIC29302AWD"
 		(exclude_from_sim no)
 		(at 245.11 100.33 0)
@@ -14821,16 +14811,6 @@
 			)
 		)
 		(uuid "3a55bc57-9514-46b1-8e95-0ecfd90c4f91")
-	)
-	(text "0.2W res"
-		(exclude_from_sim no)
-		(at 414.528 62.992 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "3c3c00e8-7f91-4ece-8b58-b1beba9cdbf2")
 	)
 	(text "Kondenzatori od 0.1u, 1u, 10u"
 		(exclude_from_sim no)
@@ -15001,6 +14981,16 @@
 			)
 		)
 		(uuid "c1e6acf4-a91c-4583-b084-cb5005b8e2b0")
+	)
+	(text "pulldown za gpio12"
+		(exclude_from_sim no)
+		(at 429.26 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c565dc37-cff0-4109-ba56-cb861ce560fd")
 	)
 	(text "Low za SPI\n"
 		(exclude_from_sim no)
@@ -15917,12 +15907,24 @@
 		(uuid "117a67e4-b23b-4946-94b2-a0c55c2c9035")
 	)
 	(no_connect
+		(at 406.4 76.2)
+		(uuid "1457ce15-1979-4254-8260-bf53d53563cc")
+	)
+	(no_connect
 		(at 454.66 73.66)
 		(uuid "1595856e-ef19-46fd-8c6c-7e626aa285ba")
 	)
 	(no_connect
+		(at 415.29 76.2)
+		(uuid "16b50d96-46c1-4d51-91c7-a30ef9fa34f9")
+	)
+	(no_connect
 		(at 247.65 92.71)
 		(uuid "1ad68eaa-158c-42e3-917d-ac5ef97c5892")
+	)
+	(no_connect
+		(at 92.71 110.49)
+		(uuid "1af3ba9e-40e1-4b97-b039-3ed6ad45a79b")
 	)
 	(no_connect
 		(at 439.42 114.3)
@@ -15937,8 +15939,16 @@
 		(uuid "2646021b-2d1a-47b7-a398-d0a674f3816f")
 	)
 	(no_connect
+		(at 101.6 110.49)
+		(uuid "27181c6f-3aa6-4f4b-b31e-cc75e2ac749b")
+	)
+	(no_connect
 		(at 354.33 110.49)
 		(uuid "2dbea75d-56a8-4483-b6da-c68828bab7d6")
+	)
+	(no_connect
+		(at 415.29 83.82)
+		(uuid "3110874b-8b3b-4de9-86d0-bfd42a5ec30b")
 	)
 	(no_connect
 		(at 454.66 91.44)
@@ -15975,6 +15985,10 @@
 	(no_connect
 		(at 317.5 43.18)
 		(uuid "4c99a962-79bf-49d1-8fbe-9f8dd09d2fdd")
+	)
+	(no_connect
+		(at 92.71 102.87)
+		(uuid "519a9823-5478-4e9e-9ef0-5e29906ef27f")
 	)
 	(no_connect
 		(at 454.66 96.52)
@@ -16021,6 +16035,10 @@
 		(uuid "6a688f20-6a4e-4898-b04c-158619bde961")
 	)
 	(no_connect
+		(at 406.4 83.82)
+		(uuid "6d50101c-29fe-40a6-82b4-79b062f99d5d")
+	)
+	(no_connect
 		(at 191.77 347.98)
 		(uuid "725e664b-5a60-4457-92f2-23d00e2c7351")
 	)
@@ -16039,6 +16057,10 @@
 	(no_connect
 		(at 68.58 331.47)
 		(uuid "7865ea06-8db3-4ab0-a751-d64fc0544479")
+	)
+	(no_connect
+		(at 415.29 88.9)
+		(uuid "7a0f7381-0995-4a1d-bcc2-07af714c4b17")
 	)
 	(no_connect
 		(at 454.66 106.68)
@@ -16073,6 +16095,10 @@
 		(uuid "923bfe74-5e99-4690-b246-a136b6ef349b")
 	)
 	(no_connect
+		(at 101.6 102.87)
+		(uuid "958c48fb-143a-4d43-8482-71ae67c5e5b2")
+	)
+	(no_connect
 		(at 454.66 60.96)
 		(uuid "98ba46ea-87f7-46fe-a031-25ab1326aee4")
 	)
@@ -16087,6 +16113,10 @@
 	(no_connect
 		(at 320.04 43.18)
 		(uuid "aea8f8e1-b9e2-4698-9147-8a1b11f62b2d")
+	)
+	(no_connect
+		(at 406.4 81.28)
+		(uuid "b2abe23d-5865-4a5f-9f00-a53829026b1f")
 	)
 	(no_connect
 		(at 454.66 81.28)
@@ -16113,6 +16143,10 @@
 		(uuid "c310bed1-fb7f-4415-be98-a3014ce3fcc6")
 	)
 	(no_connect
+		(at 406.4 88.9)
+		(uuid "cc8322c0-9429-4776-968c-806d2e2dffdd")
+	)
+	(no_connect
 		(at 454.66 68.58)
 		(uuid "d197d382-3571-4bc7-b070-b8dfbaa8e3f9")
 	)
@@ -16127,6 +16161,14 @@
 	(no_connect
 		(at 397.51 115.57)
 		(uuid "d3b283b4-132d-4c16-984e-08d655b6f97f")
+	)
+	(no_connect
+		(at 415.29 81.28)
+		(uuid "d42220e0-8bbe-4d30-8591-894d11b74154")
+	)
+	(no_connect
+		(at 412.75 179.07)
+		(uuid "d496e05f-5962-4c53-8228-54e445c07815")
 	)
 	(no_connect
 		(at 314.96 43.18)
@@ -16171,6 +16213,10 @@
 	(no_connect
 		(at 381 219.71)
 		(uuid "f40a8493-13b8-43a7-b8c6-97f8afd663d0")
+	)
+	(no_connect
+		(at 420.37 179.07)
+		(uuid "f4ccbaad-3286-4add-b996-7bf3403e913c")
 	)
 	(no_connect
 		(at 58.42 168.91)
@@ -26622,7 +26668,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 406.4 59.69 0)
+		(at 415.29 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26630,9 +26676,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "27bb485a-68a0-4162-83c1-32a011bc74ef")
-		(property "Reference" "R6"
-			(at 408.178 58.42 0)
+		(fields_autoplaced yes)
+		(uuid "289a560c-6750-4de3-919f-ed7391acbd3c")
+		(property "Reference" "R15"
+			(at 417.83 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26642,8 +26689,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "40R"
-			(at 408.178 60.96 0)
+		(property "Value" "10R"
+			(at 417.83 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26653,8 +26700,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 406.4 59.69 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 415.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26665,7 +26712,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 406.4 59.69 0)
+			(at 415.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26676,7 +26723,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 406.4 59.69 0)
+			(at 415.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26686,8 +26733,30 @@
 				)
 			)
 		)
-		(property "MPN" ""
-			(at 406.4 59.69 0)
+		(property "MPN" "CRCW080510R0JNEA"
+			(at 415.29 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "Vishay Dale"
+			(at 415.29 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "541-10ACT-ND"
+			(at 415.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26698,15 +26767,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "a1a8eeeb-6e02-46b9-9b7a-2487ad0d0660")
+			(uuid "5ae38b80-707a-4232-a12b-bc72faffb493")
 		)
 		(pin "2"
-			(uuid "fa255df0-ef6c-4b5a-a5c5-7290e57930eb")
+			(uuid "f95e6ed3-9417-4827-86e6-a1aac5cf5c02")
 		)
 		(instances
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R6")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -29397,6 +29466,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 415.29 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "416305b2-5b06-4603-8d48-34bbc33497b0")
+		(property "Reference" "R23"
+			(at 417.83 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "20R"
+			(at 417.83 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 415.29 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 415.29 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 415.29 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW080520R0JNEA"
+			(at 415.29 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "Vishay Dale"
+			(at 415.29 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "541-20ACT-ND"
+			(at 415.29 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "18a0c6ea-224a-4d5a-9c08-2fef684aac20")
+		)
+		(pin "2"
+			(uuid "9eaf17fa-6813-4215-bd2a-7638bf9c4673")
+		)
+		(instances
+			(project "Ohmsprint"
+				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 153.67 323.85 0)
 		(unit 1)
@@ -29872,8 +30056,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u promeni mnp, mora elec"
-			(at 236.22 172.72 90)
+		(property "Value" "10u"
+			(at 233.68 166.37 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29883,7 +30067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.2"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.7"
 			(at 233.3752 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -29916,7 +30100,7 @@
 				)
 			)
 		)
-		(property "MPN" "EMVE250ARA470MF55G"
+		(property "MPN" "EDH106M016A9BAA"
 			(at 232.41 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -29927,7 +30111,7 @@
 				)
 			)
 		)
-		(property "MNF" "Chemi-Con"
+		(property "MNF" "KEMET"
 			(at 232.41 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -29938,7 +30122,7 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" "565-EMVE250ARA470MF55GCT-ND"
+		(property "DigiKey Part Number" "399-17336-1-ND"
 			(at 232.41 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -31336,7 +31520,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "82k"
+		(property "Value" "82k5"
 			(at 83.82 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31347,7 +31531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 81.28 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -31380,7 +31564,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT82K5"
 			(at 81.28 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -31391,7 +31575,7 @@
 				)
 			)
 		)
-		(property "MNF" ""
+		(property "MNF" "Stackpole Electronics Inc"
 			(at 81.28 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -31402,7 +31586,7 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" ""
+		(property "DigiKey Part Number" "RMCF0805FT82K5CT-ND"
 			(at 81.28 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -35460,6 +35644,244 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 92.71 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8785d1ee-07c1-4fa7-b28b-aeb4cb216286")
+		(property "Reference" "R12"
+			(at 95.25 105.4099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56k"
+			(at 95.25 107.9499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 93.726 106.934 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 92.71 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0756KL"
+			(at 92.71 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "YAGEO"
+			(at 92.71 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "311-56KHRCT-ND"
+			(at 92.71 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c925de8-41e9-4a38-ae3d-f7cbf5545869")
+		)
+		(pin "2"
+			(uuid "88e83eea-2ccc-4322-8c49-b9fc77d36284")
+		)
+		(instances
+			(project "Ohmsprint"
+				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 416.56 179.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8825d94a-0038-46b4-be90-288bfb4285aa")
+		(property "Reference" "R64"
+			(at 417.068 177.038 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 417.068 174.498 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 416.814 178.054 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 416.56 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 416.56 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 416.56 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "YAGEO"
+			(at 416.56 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "311-10.0KHRCT-ND"
+			(at 416.56 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 416.56 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "64b9fe84-5f58-4d60-8049-db2b8dbe9f1f")
+		)
+		(pin "2"
+			(uuid "e1caccf8-3cb6-4da9-8c36-eedf95aa011a")
+		)
+		(instances
+			(project "Ohmsprint"
+				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
+					(reference "R64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:ESD9B5.0ST5G")
 		(at 90.17 327.66 90)
 		(unit 1)
@@ -38812,7 +39234,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "40R"
+		(property "Value" "40R2"
 			(at 401.828 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38823,7 +39245,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 400.05 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -38856,7 +39278,29 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CRCW080540R2FKEA"
+			(at 400.05 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "Vishay Dale"
+			(at 400.05 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "541-40.2CCT-ND"
 			(at 400.05 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -39800,6 +40244,121 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 406.4 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6209640-252a-4384-84e7-97c0563dbd0e")
+		(property "Reference" "R6"
+			(at 408.94 77.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10R"
+			(at 408.94 80.0099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 406.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 406.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 406.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW080510R0JNEA"
+			(at 406.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "Vishay Dale"
+			(at 406.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "541-10ACT-ND"
+			(at 406.4 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cdb969a0-6ee4-40b0-a470-264bd6258908")
+		)
+		(pin "2"
+			(uuid "295fb374-8af9-4fa6-8ac6-3cad66bc45d4")
+		)
+		(instances
+			(project "Ohmsprint"
+				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -42349,6 +42908,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 406.4 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d85f3b54-38ca-46fe-b075-a45305c47a4d")
+		(property "Reference" "R13"
+			(at 408.178 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "40R2"
+			(at 408.178 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 406.4 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 406.4 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 406.4 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW080540R2FKEA"
+			(at 406.4 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "Vishay Dale"
+			(at 406.4 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "541-40.2CCT-ND"
+			(at 406.4 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a069ceb3-9793-46f3-90db-55da933ac825")
+		)
+		(pin "2"
+			(uuid "290c279d-bf42-4e19-a12b-625f234a2386")
+		)
+		(instances
+			(project "Ohmsprint"
+				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 337.82 214.63 0)
 		(unit 1)
@@ -43142,6 +43815,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 101.6 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0eea2b4-915a-45c0-b0de-13ffe835e517")
+		(property "Reference" "R42"
+			(at 104.14 105.4099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22k1"
+			(at 104.14 107.9499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 102.616 106.934 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 101.6 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0722K1L"
+			(at 101.6 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "YAGEO"
+			(at 101.6 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "311-22.1KHRCT-ND"
+			(at 101.6 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 101.6 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51f9df0c-9897-4389-8e2a-d1787b7b2954")
+		)
+		(pin "2"
+			(uuid "13885bb0-9b66-4528-bbbf-476a357c5958")
+		)
+		(instances
+			(project "Ohmsprint"
+				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 193.04 168.91 0)
 		(unit 1)
@@ -43437,6 +44236,39 @@
 			)
 		)
 		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 391.16 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AO3400A"
+			(at 391.16 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "UMW"
+			(at 391.16 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "4518-AO3400ACT-ND"
 			(at 391.16 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -45862,6 +46694,121 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 406.4 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc35953d-bf05-4455-ab77-ccd2f48eca7a")
+		(property "Reference" "R14"
+			(at 408.94 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "20R"
+			(at 408.94 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 406.4 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 406.4 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 406.4 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW080520R0JNEA"
+			(at 406.4 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "Vishay Dale"
+			(at 406.4 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "541-20ACT-ND"
+			(at 406.4 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53d64ee1-4fab-4ca1-8147-8f0562b6f50d")
+		)
+		(pin "2"
+			(uuid "3b5cdf5a-e0ff-4d73-b5df-bc238f3197fe")
+		)
+		(instances
+			(project "Ohmsprint"
+				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
+					(reference "R14")
 					(unit 1)
 				)
 			)
