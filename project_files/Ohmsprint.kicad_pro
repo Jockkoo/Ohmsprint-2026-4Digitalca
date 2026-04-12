@@ -244,7 +244,28 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|1917700|3200400|15a37eb5-74f5-4503-838a-a779cadea2d1|d0ad9a41-619b-43a6-8d9f-1e130a8b2b23|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96",
+        ""
+      ],
+      [
+        "pin_to_pin|2578100|3149600|d0ad9a41-619b-43a6-8d9f-1e130a8b2b23|dda939f8-4a86-493a-b21c-14e64280ed96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96",
+        ""
+      ],
+      [
+        "pin_to_pin|774700|889000|443033ac-7e6a-4d48-a09f-fc18f61a6766|dda939f8-4a86-493a-b21c-14e64280ed96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96",
+        ""
+      ],
+      [
+        "power_pin_not_driven|2222500|876300|b825ca44-3d64-4320-8cb1-4fc2c415c49f|00000000-0000-0000-0000-000000000000|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|2235200|1803400|586283f9-fd67-413c-9c57-8dd9558239a5|00000000-0000-0000-0000-000000000000|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -554,10 +575,10 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -572,16 +593,16 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -629,12 +650,18 @@
           "group_by": false,
           "label": "MPN",
           "name": "MPN",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "MNF",
           "name": "MNF",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey Part Number",
+          "name": "DigiKey Part Number",
           "show": false
         }
       ],
@@ -694,7 +721,7 @@
         "uuid": "7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
       }
     ],
-    "used_designators": "H1,SW2-4,U3,D3-4,C2,C33-34,R8,R29-30,R34,#PWR45,#PWR60,#PWR64-72,J2,J5-6",
+    "used_designators": "#FLG1-10,D10,C1-6,C8,C12,C17,C19-20,C23,C26-27,C34-51,JP1-2,R1,R3,R5-6,R8-10,R12-13,R18,R20-21,R23,R27-28,R34-60,#PWR63,#PWR75,#PWR80-89,U8-10",
     "variants": []
   },
   "sheets": [
