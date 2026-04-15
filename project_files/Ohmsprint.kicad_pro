@@ -663,6 +663,12 @@
           "label": "DigiKey Part Number",
           "name": "DigiKey Part Number",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFN",
+          "name": "MFN",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -721,7 +727,7 @@
         "uuid": "7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
       }
     ],
-    "used_designators": "R6,R12-15,R23,R42,R64",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
