@@ -1,0 +1,13 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ABS210-13") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/ABS210-13.pretty") (options "") (descr ""))
+	(lib (name "cp2102n-a02-gqfn28-foot") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/cp2102n-a02-gqfn28-foot") (options "") (descr ""))
+	(lib (name "CUI_PJ-002AH-SMT-TR-foot") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/CUI_PJ-002AH-SMT-TR-foot") (options "") (descr ""))
+	(lib (name "CUI_SJ-3523-SMT-TR-foot") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/CUI_SJ-3523-SMT-TR-foot") (options "") (descr ""))
+	(lib (name "ESP32_WROOM_32E_N4-foot") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/ESP32_WROOM_32E_N4-foot") (options "") (descr ""))
+	(lib (name "Molex0541324062-foot") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/Molex0541324062-foot") (options "") (descr ""))
+	(lib (name "SD_kartica-foot") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/SD_kartica-foot") (options "") (descr ""))
+	(lib (name "TPS2121RUXR-foot") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/TPS2121RUXR-foot") (options "") (descr ""))
+	(lib (name "USB4110-GF-A-foot") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/USB4110-GF-A-foot") (options "") (descr ""))
+	(lib (name "MEM2067-02-180-00-A_REVB_foot") (type "KiCad") (uri "${KIPRJMOD}/Libraries/Footprints/MEM2067-02-180-00-A_REVB_foot") (options "") (descr ""))
+)
