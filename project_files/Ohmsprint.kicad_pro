@@ -60,7 +60,32 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|117714358|112149593|62a57a8d-d788-4da6-afc1-6d62e2fda3b6|c9a84642-8a67-4d64-a679-e7d915c63480",
+          ""
+        ],
+        [
+          "clearance|93214396|112149593|35f27009-b0e6-4c8c-8e7e-73772750506e|f22eec8a-ebbd-4bdf-b8c5-97e579174409",
+          ""
+        ],
+        [
+          "hole_clearance|86584801|21791300|f71c4687-8581-49a0-bf68-85a1ca436bc1|fdc04d48-84b2-45cf-accf-ba51d663d932",
+          ""
+        ],
+        [
+          "hole_clearance|86775200|21791300|744428a7-0774-4bc7-a996-b7988bdf90fd|fdc04d48-84b2-45cf-accf-ba51d663d932",
+          ""
+        ],
+        [
+          "hole_clearance|92184800|21791300|c63361d8-d624-484a-81e5-ce8ce3dd679b|98e5f88a-9d97-448d-b61e-34730583ef69",
+          ""
+        ],
+        [
+          "hole_clearance|92375201|21791300|581ff462-6162-4b3c-abac-d703228014aa|98e5f88a-9d97-448d-b61e-34730583ef69",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -194,7 +219,13 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.3,
+        0.4,
+        0.6,
+        0.8,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -526,8 +557,8 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.0,
         "tuning_profile": "",
-        "via_diameter": 0.35,
-        "via_drill": 0.2,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -740,7 +771,7 @@
         "uuid": "7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
       }
     ],
-    "used_designators": "#PWR95,#FLG3,R2",
+    "used_designators": "#PWR60,R43,R47,R65",
     "variants": []
   },
   "sheets": [

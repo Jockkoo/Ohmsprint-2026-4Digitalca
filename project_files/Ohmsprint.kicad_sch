@@ -14328,16 +14328,6 @@
 		)
 		(uuid "c1e6acf4-a91c-4583-b084-cb5005b8e2b0")
 	)
-	(text "pulldown za gpio12"
-		(exclude_from_sim no)
-		(at 429.26 176.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c565dc37-cff0-4109-ba56-cb861ce560fd")
-	)
 	(text "Low za SPI\n"
 		(exclude_from_sim no)
 		(at 203.2 212.09 0)
@@ -14499,12 +14489,6 @@
 		(uuid "107e34f7-a9a4-450d-a5c6-6a850059b7fe")
 	)
 	(junction
-		(at 267.97 195.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14b05db8-8523-49d4-bac5-1e1894089a8a")
-	)
-	(junction
 		(at 198.12 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14611,12 +14595,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "31849d3d-d380-491e-9351-af8b3d08682c")
-	)
-	(junction
-		(at 347.98 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "324e7f78-1aa5-4c85-a5e1-4dfa00ef8e90")
 	)
 	(junction
 		(at 111.76 34.29)
@@ -14805,12 +14783,6 @@
 		(uuid "6e633109-146e-41cd-8eea-55b9228fb684")
 	)
 	(junction
-		(at 223.52 231.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "76010cf2-c172-4c2c-8ad7-733ef26f031e")
-	)
-	(junction
 		(at 157.48 327.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14989,12 +14961,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7b4de41-12f6-4f54-84b7-c102afcfa031")
-	)
-	(junction
-		(at 228.6 228.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bb7c7a42-49ea-49de-9b11-5f6168334ec2")
 	)
 	(junction
 		(at 384.81 71.12)
@@ -15223,16 +15189,8 @@
 		(uuid "117a67e4-b23b-4946-94b2-a0c55c2c9035")
 	)
 	(no_connect
-		(at 406.4 76.2)
-		(uuid "1457ce15-1979-4254-8260-bf53d53563cc")
-	)
-	(no_connect
 		(at 454.66 73.66)
 		(uuid "1595856e-ef19-46fd-8c6c-7e626aa285ba")
-	)
-	(no_connect
-		(at 415.29 76.2)
-		(uuid "16b50d96-46c1-4d51-91c7-a30ef9fa34f9")
 	)
 	(no_connect
 		(at 350.52 168.91)
@@ -15241,10 +15199,6 @@
 	(no_connect
 		(at 247.65 92.71)
 		(uuid "1ad68eaa-158c-42e3-917d-ac5ef97c5892")
-	)
-	(no_connect
-		(at 92.71 110.49)
-		(uuid "1af3ba9e-40e1-4b97-b039-3ed6ad45a79b")
 	)
 	(no_connect
 		(at 439.42 114.3)
@@ -15259,16 +15213,8 @@
 		(uuid "2646021b-2d1a-47b7-a398-d0a674f3816f")
 	)
 	(no_connect
-		(at 101.6 110.49)
-		(uuid "27181c6f-3aa6-4f4b-b31e-cc75e2ac749b")
-	)
-	(no_connect
 		(at 354.33 110.49)
 		(uuid "2dbea75d-56a8-4483-b6da-c68828bab7d6")
-	)
-	(no_connect
-		(at 415.29 83.82)
-		(uuid "3110874b-8b3b-4de9-86d0-bfd42a5ec30b")
 	)
 	(no_connect
 		(at 454.66 91.44)
@@ -15309,10 +15255,6 @@
 	(no_connect
 		(at 60.96 325.12)
 		(uuid "50710648-6d66-4366-8038-29d8853a0478")
-	)
-	(no_connect
-		(at 92.71 102.87)
-		(uuid "519a9823-5478-4e9e-9ef0-5e29906ef27f")
 	)
 	(no_connect
 		(at 454.66 96.52)
@@ -15359,10 +15301,6 @@
 		(uuid "6a688f20-6a4e-4898-b04c-158619bde961")
 	)
 	(no_connect
-		(at 406.4 83.82)
-		(uuid "6d50101c-29fe-40a6-82b4-79b062f99d5d")
-	)
-	(no_connect
 		(at 241.3 213.36)
 		(uuid "72340238-1d14-4023-b4af-6b10bfbd4185")
 	)
@@ -15381,10 +15319,6 @@
 	(no_connect
 		(at 426.72 81.28)
 		(uuid "76907ba4-1ac8-433d-8146-d44fbd346caf")
-	)
-	(no_connect
-		(at 415.29 88.9)
-		(uuid "7a0f7381-0995-4a1d-bcc2-07af714c4b17")
 	)
 	(no_connect
 		(at 454.66 106.68)
@@ -15423,10 +15357,6 @@
 		(uuid "923bfe74-5e99-4690-b246-a136b6ef349b")
 	)
 	(no_connect
-		(at 101.6 102.87)
-		(uuid "958c48fb-143a-4d43-8482-71ae67c5e5b2")
-	)
-	(no_connect
 		(at 454.66 60.96)
 		(uuid "98ba46ea-87f7-46fe-a031-25ab1326aee4")
 	)
@@ -15445,10 +15375,6 @@
 	(no_connect
 		(at 381 179.07)
 		(uuid "aeaea152-3b60-463f-8e0f-d10df3bc6c84")
-	)
-	(no_connect
-		(at 406.4 81.28)
-		(uuid "b2abe23d-5865-4a5f-9f00-a53829026b1f")
 	)
 	(no_connect
 		(at 454.66 81.28)
@@ -15479,10 +15405,6 @@
 		(uuid "c42d067a-bf02-40c9-9c5c-c1ef5aa97735")
 	)
 	(no_connect
-		(at 406.4 88.9)
-		(uuid "cc8322c0-9429-4776-968c-806d2e2dffdd")
-	)
-	(no_connect
 		(at 454.66 68.58)
 		(uuid "d197d382-3571-4bc7-b070-b8dfbaa8e3f9")
 	)
@@ -15493,14 +15415,6 @@
 	(no_connect
 		(at 397.51 115.57)
 		(uuid "d3b283b4-132d-4c16-984e-08d655b6f97f")
-	)
-	(no_connect
-		(at 415.29 81.28)
-		(uuid "d42220e0-8bbe-4d30-8591-894d11b74154")
-	)
-	(no_connect
-		(at 412.75 179.07)
-		(uuid "d496e05f-5962-4c53-8228-54e445c07815")
 	)
 	(no_connect
 		(at 314.96 43.18)
@@ -15527,6 +15441,10 @@
 		(uuid "e11a5afd-ada1-4138-9291-39b2b629bc9c")
 	)
 	(no_connect
+		(at 381 173.99)
+		(uuid "e2753465-3246-47a2-98c0-0ccc0e18709e")
+	)
+	(no_connect
 		(at 454.66 104.14)
 		(uuid "e52fe42e-a604-4ed4-a93e-d3831186646c")
 	)
@@ -15541,10 +15459,6 @@
 	(no_connect
 		(at 454.66 55.88)
 		(uuid "ec87ccdb-6dc2-482d-abd5-5e9f01abd6ea")
-	)
-	(no_connect
-		(at 420.37 179.07)
-		(uuid "f4ccbaad-3286-4add-b996-7bf3403e913c")
 	)
 	(no_connect
 		(at 58.42 168.91)
@@ -15790,7 +15704,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 195.58) (xy 270.51 195.58)
+			(xy 241.3 195.58) (xy 270.51 195.58)
 		)
 		(stroke
 			(width 0)
@@ -15827,6 +15741,16 @@
 			(type default)
 		)
 		(uuid "0941f647-7614-4ef7-94f1-9dcf6b3ac64e")
+	)
+	(wire
+		(pts
+			(xy 257.81 210.82) (xy 241.3 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a984e68-ad36-4a47-8a9a-70edc814b833")
 	)
 	(wire
 		(pts
@@ -15917,6 +15841,16 @@
 			(type default)
 		)
 		(uuid "0dc2b020-bb04-4f0e-bf61-04ffcdb2db98")
+	)
+	(wire
+		(pts
+			(xy 259.08 222.25) (xy 259.08 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e5fbfa2-6bc9-4e93-8dfe-5754134c43a6")
 	)
 	(wire
 		(pts
@@ -16410,16 +16344,6 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 209.55) (xy 337.82 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24318b4e-b8de-4501-9bd9-b91ea21bf160")
-	)
-	(wire
-		(pts
 			(xy 403.86 43.18) (xy 403.86 54.61)
 		)
 		(stroke
@@ -16910,16 +16834,6 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 229.87) (xy 337.82 233.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a37291c-ec1b-4612-8675-8d39e939ac19")
-	)
-	(wire
-		(pts
 			(xy 354.33 332.74) (xy 354.33 331.47)
 		)
 		(stroke
@@ -17230,7 +17144,7 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 95.25) (xy 354.33 95.25)
+			(xy 339.09 95.25) (xy 354.33 95.25)
 		)
 		(stroke
 			(width 0)
@@ -17327,16 +17241,6 @@
 			(type default)
 		)
 		(uuid "4f3d6193-0528-4673-9c19-22ce988cba6c")
-	)
-	(wire
-		(pts
-			(xy 241.3 210.82) (xy 247.65 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "500360ce-2aef-49db-b79b-f72b98268886")
 	)
 	(wire
 		(pts
@@ -17560,16 +17464,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 231.14) (xy 223.52 231.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58ac10d8-64fa-413e-84d1-877fecfab1db")
-	)
-	(wire
-		(pts
 			(xy 257.81 327.66) (xy 278.13 327.66)
 		)
 		(stroke
@@ -17587,16 +17481,6 @@
 			(type default)
 		)
 		(uuid "590df55d-f19d-481d-bfd1-d3e33855b7e3")
-	)
-	(wire
-		(pts
-			(xy 347.98 92.71) (xy 347.98 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5912f9f3-bee6-41ee-95e0-c7aa475c4eb2")
 	)
 	(wire
 		(pts
@@ -17637,6 +17521,16 @@
 			(type default)
 		)
 		(uuid "5a1d3ec9-4da5-4736-ae54-4bc05c4092b5")
+	)
+	(wire
+		(pts
+			(xy 262.89 222.25) (xy 259.08 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a231cda-0265-43e2-ab90-f0e7651ba74d")
 	)
 	(wire
 		(pts
@@ -17740,16 +17634,6 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 95.25) (xy 347.98 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dbac328-7418-4b9f-9bba-35b3082d859b")
-	)
-	(wire
-		(pts
 			(xy 241.3 193.04) (xy 259.08 193.04)
 		)
 		(stroke
@@ -17757,16 +17641,6 @@
 			(type default)
 		)
 		(uuid "5fdcc35e-df10-4383-93b1-2c2da2b8e2c2")
-	)
-	(wire
-		(pts
-			(xy 241.3 203.2) (xy 247.65 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6002c70f-7c56-45d5-b185-9a4d5be0afd0")
 	)
 	(wire
 		(pts
@@ -18230,6 +18104,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 227.33) (xy 271.78 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75a3e9c9-70fb-485a-bb1d-a76b6cee9427")
+	)
+	(wire
+		(pts
 			(xy 274.32 43.18) (xy 274.32 41.91)
 		)
 		(stroke
@@ -18237,16 +18121,6 @@
 			(type default)
 		)
 		(uuid "75dca364-8e18-4ff2-9120-8c7315468ee3")
-	)
-	(wire
-		(pts
-			(xy 337.82 222.25) (xy 337.82 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75f19dd2-fbf2-403d-9d94-1f6799b88240")
 	)
 	(wire
 		(pts
@@ -18380,7 +18254,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 228.6) (xy 228.6 231.14)
+			(xy 228.6 226.06) (xy 228.6 231.14)
 		)
 		(stroke
 			(width 0)
@@ -18457,6 +18331,16 @@
 			(type default)
 		)
 		(uuid "80d00b92-4ea8-4edd-ba03-aeeebf923e16")
+	)
+	(wire
+		(pts
+			(xy 262.89 227.33) (xy 257.81 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80e376b0-a56f-47ea-949e-9a6986ad45fb")
 	)
 	(wire
 		(pts
@@ -18860,16 +18744,6 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 193.04) (xy 267.97 195.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b052b6b-224f-4f82-ae42-155f684fb040")
-	)
-	(wire
-		(pts
 			(xy 127 87.63) (xy 133.35 87.63)
 		)
 		(stroke
@@ -18917,6 +18791,16 @@
 			(type default)
 		)
 		(uuid "9caa9a49-8e5d-48b2-930f-551dea450832")
+	)
+	(wire
+		(pts
+			(xy 257.81 227.33) (xy 257.81 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d43fac8-2372-4c68-a4a9-7258a96a549d")
 	)
 	(wire
 		(pts
@@ -19077,6 +18961,16 @@
 			(type default)
 		)
 		(uuid "a67ac56d-fd00-444d-b4b7-a050d22da7ae")
+	)
+	(wire
+		(pts
+			(xy 259.08 205.74) (xy 241.3 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6a8dfa1-7a3b-410b-97a7-4ca49a910823")
 	)
 	(wire
 		(pts
@@ -19460,16 +19354,6 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 182.88) (xy 267.97 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9bb4b87-cb0d-4be0-bcdb-0fb9463a3f36")
-	)
-	(wire
-		(pts
 			(xy 259.08 87.63) (xy 259.08 96.52)
 		)
 		(stroke
@@ -19580,6 +19464,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 203.2) (xy 241.3 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf071b6e-a692-424a-a4ba-8c0f80522c53")
+	)
+	(wire
+		(pts
 			(xy 58.42 176.53) (xy 63.5 176.53)
 		)
 		(stroke
@@ -19647,6 +19541,16 @@
 			(type default)
 		)
 		(uuid "c3a8a766-aa73-4ed0-b495-3fb41416b1c4")
+	)
+	(wire
+		(pts
+			(xy 267.97 217.17) (xy 271.78 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3acf8dd-7359-4412-8bbb-43f8e86fd6be")
 	)
 	(wire
 		(pts
@@ -19750,6 +19654,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 217.17) (xy 260.35 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caad270f-e399-4159-a45f-462da2e77d05")
+	)
+	(wire
+		(pts
 			(xy 181.61 190.5) (xy 210.82 190.5)
 		)
 		(stroke
@@ -19800,16 +19714,6 @@
 	)
 	(wire
 		(pts
-			(xy 381 173.99) (xy 397.51 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ccaf2442-baae-4da7-8c79-6764b2e2df0e")
-	)
-	(wire
-		(pts
 			(xy 226.06 41.91) (xy 226.06 44.45)
 		)
 		(stroke
@@ -19837,6 +19741,16 @@
 			(type default)
 		)
 		(uuid "cd9c5245-58a0-48de-b02e-4a9f83f2e131")
+	)
+	(wire
+		(pts
+			(xy 267.97 222.25) (xy 271.78 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce73a117-9567-4122-8b98-76e2ac80bffc")
 	)
 	(wire
 		(pts
@@ -19990,6 +19904,16 @@
 	)
 	(wire
 		(pts
+			(xy 260.35 217.17) (xy 260.35 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5d8cb02-fb39-46e8-8df2-f2b5998406ed")
+	)
+	(wire
+		(pts
 			(xy 320.04 229.87) (xy 320.04 233.68)
 		)
 		(stroke
@@ -20130,16 +20054,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 195.58) (xy 267.97 195.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9b31d70-0bb8-4682-9129-b9a5440c7f25")
-	)
-	(wire
-		(pts
 			(xy 39.37 101.6) (xy 39.37 104.14)
 		)
 		(stroke
@@ -20167,16 +20081,6 @@
 			(type default)
 		)
 		(uuid "db9ecb00-dd8a-4df2-85d9-fc84313c6d58")
-	)
-	(wire
-		(pts
-			(xy 236.22 228.6) (xy 236.22 231.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbe27bb9-5881-4ada-bc0f-cc18e48f29c9")
 	)
 	(wire
 		(pts
@@ -20237,16 +20141,6 @@
 			(type default)
 		)
 		(uuid "e07f137a-df13-4fb6-a880-4701c3bb9435")
-	)
-	(wire
-		(pts
-			(xy 241.3 205.74) (xy 247.65 205.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e09d55c4-3c55-47c4-9d51-b5037bd52880")
 	)
 	(wire
 		(pts
@@ -20620,16 +20514,6 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 82.55) (xy 347.98 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f069ee27-c98d-4b4f-92a9-11656efcdc01")
-	)
-	(wire
-		(pts
 			(xy 331.47 337.82) (xy 331.47 328.93)
 		)
 		(stroke
@@ -20677,16 +20561,6 @@
 			(type default)
 		)
 		(uuid "f1709bd3-be20-45db-a89f-e3b695bd5a10")
-	)
-	(wire
-		(pts
-			(xy 228.6 226.06) (xy 228.6 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f32469d6-77cd-4e41-921e-71648d51c6ef")
 	)
 	(wire
 		(pts
@@ -20918,7 +20792,7 @@
 		)
 		(uuid "02a6a740-b674-4d6a-a38f-661f1cfddc89")
 	)
-	(label "Data-"
+	(label "D-"
 		(at 182.88 325.12 0)
 		(effects
 			(font
@@ -20927,16 +20801,6 @@
 			(justify left bottom)
 		)
 		(uuid "0d968902-73ea-4f00-abf4-d124253d97c6")
-	)
-	(label "random"
-		(at 337.82 209.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0ee8dd6d-3aa2-4412-b4eb-2e53a47da48c")
 	)
 	(label "DB13"
 		(at 378.46 52.07 90)
@@ -21288,7 +21152,7 @@
 		)
 		(uuid "6ac9d951-8f72-475b-8d4f-bb475ad58d5d")
 	)
-	(label "Data+"
+	(label "D+"
 		(at 182.88 322.58 0)
 		(effects
 			(font
@@ -21328,16 +21192,6 @@
 		)
 		(uuid "7d46cdda-e45d-4b37-8b02-06ddde23f2d4")
 	)
-	(label "random"
-		(at 397.51 173.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "83f375ff-349b-427a-b1e0-b44046cfdff9")
-	)
 	(label "TXD0"
 		(at 280.67 325.12 0)
 		(effects
@@ -21358,8 +21212,8 @@
 		)
 		(uuid "8aeaced1-1abf-4b02-aade-95469ef60b2d")
 	)
-	(label "ATIM_CF1"
-		(at 247.65 210.82 0)
+	(label "ATM_CF1"
+		(at 271.78 227.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21849,7 +21703,7 @@
 		(uuid "f55f3c3c-8aaf-46b8-9477-ec6175510f2c")
 	)
 	(label "ATM_ZX"
-		(at 247.65 203.2 0)
+		(at 271.78 217.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21859,7 +21713,7 @@
 		(uuid "f768260f-7b9e-4591-8bc1-1d17f7869eb8")
 	)
 	(label "ATM_IRQ"
-		(at 247.65 205.74 0)
+		(at 271.78 222.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -22039,6 +21893,129 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 265.43 227.33 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "019f3f15-f80a-42ad-8988-fd9ac2c82f72")
+		(property "Reference" "R65"
+			(at 261.62 226.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33R"
+			(at 269.24 226.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 265.43 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 33 OHM 1% 1/10W 0603"
+			(at 265.43 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0733RL"
+			(at 265.43 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "YAGEO"
+			(at 265.43 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "13-RC0603FR-0733RLCT-ND"
+			(at 265.43 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 265.43 227.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2fd187b7-5c49-4163-8ce6-c5a848db0b54")
+		)
+		(pin "1"
+			(uuid "b786b716-d87f-492c-83cd-dfaa82f67d0c")
+		)
+		(instances
+			(project "Ohmsprint"
+				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
+					(reference "R65")
 					(unit 1)
 				)
 			)
@@ -24331,6 +24308,129 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 265.43 217.17 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1e5414a1-caf5-4893-9445-874274bee1ca")
+		(property "Reference" "R43"
+			(at 261.62 215.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33R"
+			(at 269.24 215.9 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 265.43 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 33 OHM 1% 1/10W 0603"
+			(at 265.43 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0733RL"
+			(at 265.43 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MNF" "YAGEO"
+			(at 265.43 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey Part Number" "13-RC0603FR-0733RLCT-ND"
+			(at 265.43 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number" ""
+			(at 265.43 217.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dcad4aaa-6697-47a1-bf09-14a715c813b0")
+		)
+		(pin "1"
+			(uuid "34af1b78-3250-4219-a006-3e25ea3be9ad")
+		)
+		(instances
+			(project "Ohmsprint"
+				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 270.51 111.76 0)
 		(unit 1)
@@ -24760,14 +24860,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 105.41 180.34 0)
+		(property "Value" "GND"
+			(at 107.95 176.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -26046,121 +26147,6 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 415.29 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "289a560c-6750-4de3-919f-ed7391acbd3c")
-		(property "Reference" "R15"
-			(at 417.83 77.4699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10R"
-			(at 417.83 80.0099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 415.29 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 415.29 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 415.29 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW080510R0JNEA"
-			(at 415.29 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "Vishay Dale"
-			(at 415.29 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "541-10ACT-ND"
-			(at 415.29 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5ae38b80-707a-4232-a12b-bc72faffb493")
-		)
-		(pin "2"
-			(uuid "f95e6ed3-9417-4827-86e6-a1aac5cf5c02")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -27845,7 +27831,7 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
+		(property "Value" "GND"
 			(at 219.71 175.2599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28798,121 +28784,6 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "R57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 415.29 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "416305b2-5b06-4603-8d48-34bbc33497b0")
-		(property "Reference" "R23"
-			(at 417.83 85.0899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "20R"
-			(at 417.83 87.6299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 415.29 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 415.29 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 415.29 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW080520R0JNEA"
-			(at 415.29 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "Vishay Dale"
-			(at 415.29 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "541-20ACT-ND"
-			(at 415.29 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "18a0c6ea-224a-4d5a-9c08-2fef684aac20")
-		)
-		(pin "2"
-			(uuid "9eaf17fa-6813-4215-bd2a-7638bf9c4673")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -30070,132 +29941,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 267.97 189.23 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "528ff406-dffb-4f57-a796-06a94ef6cca0")
-		(property "Reference" "R53"
-			(at 270.51 187.9599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 270.51 190.4999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 266.954 188.976 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 267.97 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 267.97 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "YAGEO"
-			(at 267.97 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "311-10.0KHRCT-ND"
-			(at 267.97 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Number" ""
-			(at 267.97 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f1c534dc-2074-46bd-83fa-ac90620768e0")
-		)
-		(pin "2"
-			(uuid "2497d761-02cd-4284-966a-8dfc424fec75")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 179.07 63.5 0)
 		(unit 1)
@@ -30268,84 +30013,6 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 337.82 233.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "53a76db9-c371-4bf5-8535-bddc27a5af27")
-		(property "Reference" "#PWR074"
-			(at 337.82 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 337.82 238.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 337.82 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 337.82 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 337.82 233.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8a6cf237-bd1c-485b-8fed-88c3192e0f5a")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -31407,143 +31074,6 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "C45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 337.82 226.06 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ff1ddff-4121-4438-8429-847934607e7b")
-		(property "Reference" "D9"
-			(at 341.63 226.3774 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED_ORANGE"
-			(at 341.63 228.9174 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 337.82 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 337.82 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 337.82 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 337.82 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "LTST-C170KFKT"
-			(at 337.82 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "Lite-On Inc."
-			(at 337.82 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "160-1413-1-ND"
-			(at 337.82 226.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Number" ""
-			(at 337.82 226.06 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e10e61b5-5457-4ac6-a98f-c3781c2b43fe")
-		)
-		(pin "2"
-			(uuid "ba063d4c-f8af-462c-b91b-f8340716361e")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -32718,84 +32248,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 267.97 182.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6bb21ae3-32ab-4796-9200-426231e0b443")
-		(property "Reference" "#PWR079"
-			(at 267.97 186.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3VD"
-			(at 267.97 177.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 267.97 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a666fafe-bfab-40cb-bd97-838f428a2e03")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "#PWR079")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 340.36 322.58 270)
 		(unit 1)
@@ -32914,83 +32366,6 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "R51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 347.98 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6f797000-ea2c-4273-97b6-a3f8dcbcf0dc")
-		(property "Reference" "#PWR060"
-			(at 347.98 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3VD"
-			(at 349.25 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 347.98 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 347.98 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 347.98 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5a33a577-df29-4567-986a-32802a81651b")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -34297,14 +33672,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 243.84 236.22 0)
+		(property "Value" "GND"
+			(at 246.38 232.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -35034,244 +34410,6 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 92.71 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8785d1ee-07c1-4fa7-b28b-aeb4cb216286")
-		(property "Reference" "R12"
-			(at 95.25 105.4099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "56k"
-			(at 95.25 107.9499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 93.726 106.934 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 92.71 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0603FR-0756KL"
-			(at 92.71 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "YAGEO"
-			(at 92.71 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "311-56KHRCT-ND"
-			(at 92.71 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9c925de8-41e9-4a38-ae3d-f7cbf5545869")
-		)
-		(pin "2"
-			(uuid "88e83eea-2ccc-4322-8c49-b9fc77d36284")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 416.56 179.07 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8825d94a-0038-46b4-be90-288bfb4285aa")
-		(property "Reference" "R64"
-			(at 417.068 177.038 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 417.068 174.498 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 416.814 178.054 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 416.56 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 416.56 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 416.56 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "YAGEO"
-			(at 416.56 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "311-10.0KHRCT-ND"
-			(at 416.56 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Number" ""
-			(at 416.56 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "64b9fe84-5f58-4d60-8049-db2b8dbe9f1f")
-		)
-		(pin "2"
-			(uuid "e1caccf8-3cb6-4da9-8c36-eedf95aa011a")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R64")
 					(unit 1)
 				)
 			)
@@ -36044,85 +35182,6 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 232.41 228.6 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "90d8ad75-8ad5-4506-8ed9-4cf5c2c2e3c9")
-		(property "Reference" "R35"
-			(at 236.982 227.076 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0R"
-			(at 232.156 226.314 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 232.664 227.584 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 232.41 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 232.41 228.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2419097b-8c9c-4269-b5e0-b2ba7c1fe7a3")
-		)
-		(pin "2"
-			(uuid "323c1e99-3a65-449e-9f0f-f08cb22de91b")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -39060,14 +38119,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
-			(at 123.19 237.49 0)
+		(property "Value" "GND"
+			(at 125.73 233.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -39188,84 +38248,6 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 223.52 231.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b175e9b7-d13a-42d7-9f06-10e8a60a8f44")
-		(property "Reference" "#PWR016"
-			(at 223.52 237.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 223.52 236.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 223.52 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2aa67fab-f288-42a7-aa66-881628f4a2a3")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -39634,8 +38616,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 406.4 78.74 0)
+		(lib_id "power:GND")
+		(at 223.52 231.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39644,31 +38626,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b6209640-252a-4384-84e7-97c0563dbd0e")
-		(property "Reference" "R6"
-			(at 408.94 77.4699 0)
+		(uuid "b61e1b04-d37c-4d20-8885-b2c92ac16ba2")
+		(property "Reference" "#PWR060"
+			(at 223.52 237.49 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10R"
-			(at 408.94 80.0099 0)
+		(property "Value" "GND"
+			(at 223.52 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 406.4 78.74 0)
+		(property "Footprint" ""
+			(at 223.52 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39679,7 +38660,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 406.4 78.74 0)
+			(at 223.52 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39689,41 +38670,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
-			(at 406.4 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW080510R0JNEA"
-			(at 406.4 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "Vishay Dale"
-			(at 406.4 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "541-10ACT-ND"
-			(at 406.4 78.74 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 231.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39734,15 +38682,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "cdb969a0-6ee4-40b0-a470-264bd6258908")
-		)
-		(pin "2"
-			(uuid "295fb374-8af9-4fa6-8ac6-3cad66bc45d4")
+			(uuid "c6b59f15-6c00-4de7-bfed-69ec4f2b535d")
 		)
 		(instances
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R6")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -42159,132 +41104,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 337.82 214.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d9500c43-3fef-495f-ba29-2434e41502e1")
-		(property "Reference" "R10"
-			(at 340.36 213.3599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "330R"
-			(at 340.36 215.8999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 338.836 214.884 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 337.82 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 337.82 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0603FR-07330RL"
-			(at 337.82 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "YAGEO"
-			(at 337.82 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "311-330HRCT-ND"
-			(at 337.82 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Number" ""
-			(at 337.82 214.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0ead5beb-9d9b-42fa-9193-ae61b0929af1")
-		)
-		(pin "1"
-			(uuid "e4d6338b-491d-45e7-b890-0a9f1c1ce2be")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "ABS210-13:ABS210-13")
 		(at 36.83 46.99 0)
 		(unit 1)
@@ -42954,258 +41773,6 @@
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
 					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 347.98 88.9 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "de73071d-7d26-4f93-b023-9f4b48c60021")
-		(property "Reference" "R58"
-			(at 350.52 87.6299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 350.52 90.1699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 346.964 88.646 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 347.98 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 347.98 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 347.98 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "YAGEO"
-			(at 347.98 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "311-10.0KHRCT-ND"
-			(at 347.98 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Number" ""
-			(at 347.98 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5926131b-08c0-4a35-bdd2-b99552aa8361")
-		)
-		(pin "2"
-			(uuid "415f87ef-a5ef-4577-94f2-4054cf092c74")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 101.6 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e0eea2b4-915a-45c0-b0de-13ffe835e517")
-		(property "Reference" "R42"
-			(at 104.14 105.4099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22k1"
-			(at 104.14 107.9499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 102.616 106.934 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 101.6 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RC0603FR-0722K1L"
-			(at 101.6 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MNF" "YAGEO"
-			(at 101.6 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "DigiKey Part Number" "311-22.1KHRCT-ND"
-			(at 101.6 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Number" ""
-			(at 101.6 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "51f9df0c-9897-4389-8e2a-d1787b7b2954")
-		)
-		(pin "2"
-			(uuid "13885bb0-9b66-4528-bbbf-476a357c5958")
-		)
-		(instances
-			(project "Ohmsprint"
-				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -44073,7 +42640,7 @@
 				)
 			)
 		)
-		(property "Value" "GNDA"
+		(property "Value" "GND"
 			(at 185.42 241.554 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45782,7 +44349,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 406.4 86.36 0)
+		(at 265.43 222.25 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -45790,32 +44357,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc35953d-bf05-4455-ab77-ccd2f48eca7a")
-		(property "Reference" "R14"
-			(at 408.94 85.0899 0)
+		(uuid "fcfc07ad-e8b0-4708-a3b3-91813e95fa88")
+		(property "Reference" "R47"
+			(at 261.62 220.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "20R"
-			(at 408.94 87.6299 0)
+		(property "Value" "33R"
+			(at 269.24 220.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 406.4 86.36 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 265.43 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45826,7 +44390,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 406.4 86.36 0)
+			(at 265.43 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45836,8 +44400,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
-			(at 406.4 86.36 0)
+		(property "Description" "RES 33 OHM 1% 1/10W 0603"
+			(at 265.43 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45847,8 +44411,8 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW080520R0JNEA"
-			(at 406.4 86.36 0)
+		(property "MPN" "RC0603FR-0733RL"
+			(at 265.43 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45858,8 +44422,8 @@
 				)
 			)
 		)
-		(property "MNF" "Vishay Dale"
-			(at 406.4 86.36 0)
+		(property "MNF" "YAGEO"
+			(at 265.43 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45869,8 +44433,8 @@
 				)
 			)
 		)
-		(property "DigiKey Part Number" "541-20ACT-ND"
-			(at 406.4 86.36 0)
+		(property "DigiKey Part Number" "13-RC0603FR-0733RLCT-ND"
+			(at 265.43 222.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45880,16 +44444,27 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "53d64ee1-4fab-4ca1-8147-8f0562b6f50d")
+		(property "Part Number" ""
+			(at 265.43 222.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "3b5cdf5a-e0ff-4d73-b5df-bc238f3197fe")
+			(uuid "8216e45b-26ca-497c-bee8-c299ef90a499")
+		)
+		(pin "1"
+			(uuid "99db28a0-5068-4b99-92ab-4a329f4d6d1b")
 		)
 		(instances
 			(project "Ohmsprint"
 				(path "/7d14fcbf-2e40-4e5b-8a34-7f39f9499b96"
-					(reference "R14")
+					(reference "R47")
 					(unit 1)
 				)
 			)
