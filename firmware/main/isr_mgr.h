@@ -26,7 +26,7 @@ typedef enum pull {
 esp_err_t
 isr_mgr_init(isr_callback_t callback);
 
-// setting `debounce_delay` to 0 disables it
+// setting `debounce_delay_ms` to 0 disables it
 esp_err_t
 isr_mgr_add_pin(int pin_number, gpio_int_type_t intr, pull_t pull, int debounce_delay_ms);
 
