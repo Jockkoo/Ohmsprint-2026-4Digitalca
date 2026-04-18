@@ -7,10 +7,8 @@ const { loadingConnection, isConnected, connect, disconnect } = useESP()
 
 function handleClick() {
   if (isConnected.value) {
-    console.log('disconnect')
     disconnect()
   } else if (!loadingConnection.value) {
-    console.log('connect')
     connect()
   }
 }

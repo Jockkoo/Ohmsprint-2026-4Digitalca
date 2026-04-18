@@ -2,7 +2,7 @@
 import type { ChartConfig } from '@/components/ui/chart'
 import { CurveType } from '@unovis/ts'
 import { VisAxis, VisLine, VisXYContainer } from '@unovis/vue'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+
 import {
   ChartContainer,
   ChartCrosshair,
@@ -12,12 +12,15 @@ import {
 } from '@/components/ui/chart'
 
 import { computed } from 'vue'
-import { type Data, useESP } from '@/composables/useESP.ts'
+import { type Data } from '@/composables/useESP.ts'
 
-const { voltageData } = useESP()
+const props = defineProps<{
+  unit: string
+  data: Data[]
+}>()
 
 const chartData = computed(() => {
-  return voltageData.value.slice(-10)
+  return props.data.slice(-10)
 })
 
 const chartConfig = {
@@ -33,24 +36,17 @@ function formatTime(count: number) {
 </script>
 
 <template>
-  <Card>
-    <CardHeader>
-      <CardTitle>Merenje napona</CardTitle>
-      <CardDescription> Automatsko ažuriranje na svakih {{ 1 }} sekundi</CardDescription>
-    </CardHeader>
-    <CardContent>
-      <ChartContainer :config="chartConfig">
-        <VisXYContainer :data="chartData" :y-domain="[0, undefined]">
-          <VisLine :x="(d: Data) => d.date" :y="(d: Data) => d.value" :color="chartConfig.value.color"
-            :curve-type="CurveType.Linear" />
-          <VisAxis type="x" :x="(d: Data) => d.date" :tick-line="false" :domain-line="false" :grid-line="false"
-            :num-ticks="6" :tick-format="formatTime" />
-          <VisAxis type="y" :num-ticks="3" :tick-line="false" :domain-line="false" />
-          <ChartTooltip />
-          <ChartCrosshair :template="componentToString(chartConfig, ChartTooltipContent, { hideLabel: true })"
-            :color="chartConfig.value.color" />
-        </VisXYContainer>
-      </ChartContainer>
-    </CardContent>
-  </Card>
+  <ChartContainer :config="chartConfig">
+    <VisXYContainer :data="chartData" :y-domain="[0, undefined]">
+      <VisLine :x="(d: Data) => d.date" :y="(d: Data) => d.value" :color="chartConfig.value.color"
+        :curve-type="CurveType.Linear" />
+      <VisAxis type="x" :x="(d: Data) => d.date" :tick-line="false" :domain-line="false" :grid-line="false"
+        :num-ticks="6" :tick-format="formatTime" />
+      <VisAxis type="y" :num-ticks="3" :tick-line="false" :domain-line="false" />
+      <ChartTooltip />
+      <ChartCrosshair v-if="chartData.length > 0"
+        :template="componentToString(chartConfig, ChartTooltipContent, { hideLabel: true })"
+        :color="chartConfig.value.color" />
+    </VisXYContainer>
+  </ChartContainer>
 </template>
