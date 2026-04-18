@@ -6,26 +6,23 @@
 #include "esp_gap_ble_api.h"
 #include "esp_gatts_api.h"
 #include "esp_log.h"
-#include "esp_random.h"
-#include "freertos/idf_additions.h"
 #include "nvs_flash.h"
 #include "util/ints.h"
 
 #define TAG "ble.c"
 
 #define MF_DATA_LEN (16)
-static u8 mf_data[MF_DATA_LEN] = "OhmSprint";
-
+static u8 mf_data[MF_DATA_LEN] = "4 Digitalca";
 #define DEV_NAME "ESP32"
+// support up to `SRVC_HANDLE_COUNT` different service things
+#define SRVC_HANDLE_COUNT (64)
+// subract 1 for the service handle, and devide by 3 (description, value, optional notif)
+#define CHAR_COUNT ((SRVC_HANDLE_COUNT - 1) / 3)
 
-#define SRVC_HANDLE_COUNT (4)
-
-#define SRVC_UUID_LEN (2)
-// for some reason different parts of the api could not agree on a single format, so you have to keep both, but the
-// first one is little endian, fuck it
-static u8 srvc_uuid[SRVC_UUID_LEN] = {0x00, 0xFF};
-#define SRVC_UUID (0xFF00)
-#define READ_CHAR_UUID (0xFF01)
+// we need these in memory because the api requires pointers to these values
+static const u16 primary_srvc_uuid = ESP_GATT_UUID_PRI_SERVICE;
+static const u16 char_decl_uuid = ESP_GATT_UUID_CHAR_DECLARE;
+static const u16 notif_uuid = ESP_GATT_UUID_CHAR_CLIENT_CONFIG;
 
 static esp_ble_adv_data_t adv_data = {
         .set_scan_rsp = false,
@@ -38,8 +35,9 @@ static esp_ble_adv_data_t adv_data = {
         .p_manufacturer_data = mf_data,
         .service_data_len = 0,
         .p_service_data = NULL,
-        .service_uuid_len = SRVC_UUID_LEN * 8,
-        .p_service_uuid = (u8 *)&srvc_uuid,
+        .service_uuid_len = 16,
+        // we are going to fill this afterwards, in `ble_init()` with the user provided data
+        // .p_service_uuid = ...
         .flag = (ESP_BLE_ADV_FLAG_GEN_DISC | ESP_BLE_ADV_FLAG_BREDR_NOT_SPT),
 };
 
@@ -54,12 +52,18 @@ static esp_ble_adv_params_t adv_params = {
 
 static struct g {
     esp_gatt_if_t gatts_if;
-    u16 service_handle;
-    u16 char_handle;
-    u16 notify_handle;
+    u16 srvc_handle;
     i32 conn_id;
 
-    TaskHandle_t notif_task_handle;
+    const ble_impl_t *impl;
+    u16 uuid;
+
+    ble_char_t chars[CHAR_COUNT];
+    // index of the first free place in the above array
+    i32 chars_count;
+
+    // internal representation of our service
+    esp_gatts_attr_db_t db[SRVC_HANDLE_COUNT];
 } g;
 
 static void
@@ -73,13 +77,7 @@ static void
 handle_adv_start_cmpl(struct ble_adv_start_cmpl_evt_param *param) {
     assert(param->status == ESP_BT_STATUS_SUCCESS);
 
-    ESP_LOGI(TAG, "advertising started successfully");
-}
-
-static void
-handle_update_conn_params(struct ble_update_conn_params_evt_param *param) {
-    ESP_LOGI(TAG, "connection params updated: status %d, min_int %d, max_int %d", param->status, param->min_int,
-            param->max_int);
+    ESP_LOGI(TAG, "start advertising event");
 }
 
 static void
@@ -91,9 +89,6 @@ gap_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param) {
         case ESP_GAP_BLE_ADV_START_COMPLETE_EVT:
             handle_adv_start_cmpl(&param->adv_start_cmpl);
             break;
-        case ESP_GAP_BLE_UPDATE_CONN_PARAMS_EVT:
-            handle_update_conn_params(&param->update_conn_params);
-            break;
         default:
             // dont care
             break;
@@ -102,22 +97,84 @@ gap_handler(esp_gap_ble_cb_event_t event, esp_ble_gap_cb_param_t *param) {
 
 static void
 handle_reg(esp_gatt_if_t gatts_if, struct gatts_reg_evt_param *param) {
+    ESP_LOGI(TAG, "reg event");
     g.gatts_if = gatts_if;
 
-    // TODO: should this go here?
     ESP_ERROR_CHECK(esp_ble_gap_set_device_name("ESP32"));
     ESP_ERROR_CHECK(esp_ble_gap_config_adv_data(&adv_data));
 
-    esp_gatt_srvc_id_t srvc_id = {
-            .is_primary = true,
-            .id =
+    size_t next_idx = 0;
+    // global service entry
+    g.db[next_idx++] = (esp_gatts_attr_db_t){
+            .attr_control =
                     {
-                            .inst_id = 0x00,  // this is always 0, useless
-                            .uuid = {.len = ESP_UUID_LEN_16, .uuid = {.uuid16 = SRVC_UUID}},
+                            .auto_rsp = ESP_GATT_AUTO_RSP,
+                    },
+            .att_desc =
+                    {
+                            .uuid_length = 2,
+                            .uuid_p = (u8 *)&primary_srvc_uuid,
+                            .perm = ESP_GATT_PERM_READ,
+                            .max_length = 2,
+                            .length = 2,
+                            .value = (u8 *)&g.uuid,
                     },
     };
 
-    ESP_ERROR_CHECK(esp_ble_gatts_create_service(gatts_if, &srvc_id, SRVC_HANDLE_COUNT));
+    // characteristics and their notifs
+    for(size_t i = 0; i < g.chars_count; i++) {
+        g.db[next_idx++] = (esp_gatts_attr_db_t){
+                .attr_control =
+                        {
+                                .auto_rsp = ESP_GATT_AUTO_RSP,
+                        },
+                .att_desc =
+                        {
+                                .uuid_length = 2,
+                                .uuid_p = (u8 *)&char_decl_uuid,
+                                .perm = ESP_GATT_PERM_READ,
+                                .max_length = sizeof(u8),
+                                .length = sizeof(u8),
+                                .value = &g.chars[i].ops,
+                        },
+        };
+
+        g.db[next_idx++] = (esp_gatts_attr_db_t){
+                .attr_control =
+                        {
+                                .auto_rsp = ESP_GATT_RSP_BY_APP,
+                        },
+                .att_desc =
+                        {
+                                .uuid_length = 2,
+                                .uuid_p = (u8 *)&g.chars[i].uuid,
+                                .perm = ESP_GATT_PERM_READ | ESP_GATT_PERM_WRITE,
+                                .max_length = g.chars[i].size,
+                                .length = 0,
+                                .value = NULL,
+                        },
+        };
+
+        if(g.chars[i].ops & BLE_CHAR_OP_NOTIFY) {
+            g.db[next_idx++] = (esp_gatts_attr_db_t){
+                    .attr_control =
+                            {
+                                    .auto_rsp = ESP_GATT_RSP_BY_APP,
+                            },
+                    .att_desc =
+                            {
+                                    .uuid_length = 2,
+                                    .uuid_p = (u8 *)&notif_uuid,
+                                    .perm = ESP_GATT_PERM_READ | ESP_GATT_PERM_WRITE,
+                                    .max_length = g.chars[i].size,
+                                    .length = 0,
+                                    .value = NULL,
+                            },
+            };
+        }
+    }
+
+    ESP_ERROR_CHECK(esp_ble_gatts_create_attr_tab((const esp_gatts_attr_db_t *)g.db, gatts_if, next_idx, 0));
 }
 
 static void
@@ -128,118 +185,118 @@ handle_read(esp_gatt_if_t gatts_if, struct gatts_read_evt_param *param) {
         // dont care
         return;
     }
+
     esp_gatt_rsp_t rsp = {0};
     rsp.attr_value.handle = param->handle;
 
-    const char *status = "WE UP!";
-    rsp.attr_value.len = strlen(status);
-    memcpy(rsp.attr_value.value, status, rsp.attr_value.len);
+    for(size_t i = 0; i < g.chars_count; i++) {
+        ble_char_t *_char = &g.chars[i];
 
-    esp_ble_gatts_send_response(gatts_if, param->conn_id, param->trans_id, ESP_GATT_OK, &rsp);
+        if(_char->ops & BLE_CHAR_OP_READ && param->handle == _char->handle) {
+            // ask userspace for the read, if they provide the data, then send it to the client, else the read was not
+            // permitted, so we pass that to the client
+            u8 *data = g.impl->read_cb(_char);
+            if(data) {
+                rsp.attr_value.len = _char->size;
+                memcpy(rsp.attr_value.value, data, rsp.attr_value.len);
+
+                esp_ble_gatts_send_response(gatts_if, param->conn_id, param->trans_id, ESP_GATT_OK, &rsp);
+            } else {
+                esp_ble_gatts_send_response(gatts_if, param->conn_id, param->trans_id, ESP_GATT_READ_NOT_PERMIT, &rsp);
+            }
+        }
+    }
+
     ESP_LOGI(TAG, "sent read response");
 }
 
 static void
-task(void *arg) {
-    while(1) {
-        u16 val = (uint16_t)(6500 + (esp_random() % 1001));
-        ESP_ERROR_CHECK(
-                esp_ble_gatts_send_indicate(g.gatts_if, g.conn_id, g.char_handle, sizeof(val), (u8 *)&val, false));
-        vTaskDelay(200);
-    }
-}
-
-static void
-setup_notif(void) {
-    ESP_LOGI(TAG, "notifications enabled");
-
-    assert(xTaskCreate(task, "handle_notif", 4096, NULL, 1, &g.notif_task_handle));
-}
-
-static void
-delete_notif(void) {
-    ESP_LOGI(TAG, "notifications disabled");
-
-    vTaskDelete(g.notif_task_handle);
-    g.notif_task_handle = NULL;
-}
-
-static void
 handle_write(esp_gatt_if_t gatts_if, struct gatts_write_evt_param *param) {
-    if(param->handle == g.notify_handle && param->len == 2) {
-        // enabled notifications
-        u16 descr_value = param->value[1] << 8 | param->value[0];
-        if(descr_value == 0x0001) {
-            setup_notif();
-        } else if(descr_value == 0x0000) {
-            delete_notif();
+    ESP_LOGI(TAG, "write");
+
+    esp_gatt_status_t status = ESP_GATT_INVALID_HANDLE;
+
+    for(size_t i = 0; i < g.chars_count; i++) {
+        ble_char_t *_char = &g.chars[i];
+
+        if(param->handle == _char->handle) {
+            if(param->len == _char->size) {
+                g.impl->write_cb(&g.chars[i], param->value);
+                status = ESP_GATT_OK;
+            } else {
+                status = ESP_GATT_INVALID_ATTR_LEN;
+            }
+
+            break;
+        } else if(param->handle == _char->notif_handle && param->len == 2) {
+            u32 val = param->value[1] << 8 | param->value[0];
+            if(val == 0x0000) {
+                g.impl->notif_cb(&g.chars[i], false);
+                status = ESP_GATT_OK;
+            } else if(val == 0x0001) {
+                g.impl->notif_cb(&g.chars[i], true);
+                status = ESP_GATT_OK;
+            } else {
+                status = ESP_GATT_ILLEGAL_PARAMETER;
+            }
+
+            break;
         }
     }
 
     if(param->need_rsp) {
-        esp_ble_gatts_send_response(gatts_if, param->conn_id, param->trans_id, ESP_GATT_OK, NULL);
+        esp_ble_gatts_send_response(gatts_if, param->conn_id, param->trans_id, status, NULL);
     }
 }
 
 static void
 handle_exec_write(esp_gatt_if_t gatts_if, struct gatts_exec_write_evt_param *param) {
+    ESP_LOGI(TAG, "exec write");
+
     esp_ble_gatts_send_response(gatts_if, param->conn_id, param->trans_id, ESP_GATT_OK, NULL);
 }
 
 static void
-handle_mtu(esp_gatt_if_t gatts_if, struct gatts_mtu_evt_param *param) {
-    ESP_LOGI(TAG, "mtu exchange, mtu size: %d", param->mtu);
-}
+handle_create_db(esp_gatt_if_t gatts_if, struct gatts_add_attr_tab_evt_param *param) {
+    ESP_LOGI(TAG, "create_db event");
 
-static void
-handle_create(esp_gatt_if_t gatts_if, struct gatts_create_evt_param *param) {
-    assert(param->status == ESP_GATT_OK);
+    g.srvc_handle = param->handles[0];
 
-    g.service_handle = param->service_handle;
-    ESP_ERROR_CHECK(esp_ble_gatts_start_service(g.service_handle));
+    size_t handle_idx = 1;
+    for(size_t i = 0; i < g.chars_count; i++) {
+        // skip the handle for the decriptions
+        handle_idx++;
 
-    // add characteristics
-    esp_bt_uuid_t uuid = {
-            .len = ESP_UUID_LEN_16,
-            .uuid = {.uuid16 = READ_CHAR_UUID},
-    };
-    ESP_ERROR_CHECK(esp_ble_gatts_add_char(g.service_handle, &uuid, ESP_GATT_PERM_READ,
-            ESP_GATT_CHAR_PROP_BIT_READ | ESP_GATT_CHAR_PROP_BIT_NOTIFY, NULL, NULL));
-}
+        // and take the next one
+        g.chars[i].handle = param->handles[handle_idx++];
 
-static void
-handle_add_char(esp_gatt_if_t gatts_if, struct gatts_add_char_evt_param *param) {
-    assert(param->status == ESP_GATT_OK);
+        if(g.chars[i].ops & BLE_CHAR_OP_NOTIFY) {
+            // and the next one we have notifs for this char
+            g.chars[i].notif_handle = param->handles[handle_idx++];
+        }
+    }
 
-    g.char_handle = param->attr_handle;
-
-    esp_bt_uuid_t uuid = {
-            .len = ESP_UUID_LEN_16,
-            // ovaj uuid mora da bude ovaj da bi ga protokol prepoznao kao notify
-            .uuid = {.uuid16 = ESP_GATT_UUID_CHAR_CLIENT_CONFIG},
-    };
-
-    ESP_ERROR_CHECK(esp_ble_gatts_add_char_descr(g.service_handle, &uuid, ESP_GATT_PERM_READ | ESP_GATT_PERM_WRITE,
-            NULL, NULL));
-}
-
-static void
-handle_add_char_descr(esp_gatt_if_t gatts_if, struct gatts_add_char_descr_evt_param *param) {
-    assert(param->status == ESP_GATT_OK);
-    g.notify_handle = param->attr_handle;
+    // we should have exactly this amount of handles
+    assert(handle_idx == param->num_handle);
+    ESP_ERROR_CHECK(esp_ble_gatts_start_service(param->handles[0]));
 }
 
 static void
 handle_connect(esp_gatt_if_t gatts_if, struct gatts_connect_evt_param *param) {
+    ESP_LOGI(TAG, "connect event");
     g.conn_id = param->conn_id;
+
+    // once we have a client we stop advertising since we only support talking to a single client
+    // TODO: might allow multiple clients in the future
+    ESP_ERROR_CHECK(esp_ble_gap_stop_advertising());
 }
 
 static void
 handle_disconnect(esp_gatt_if_t gatts_if, struct gatts_disconnect_evt_param *param) {
     g.conn_id = -1;
-    if(g.notif_task_handle) {
-        delete_notif();
-    }
+    // if(g.notif_task_handle) {
+    //     delete_notif();
+    // }
 
     // start advertising again
     ESP_ERROR_CHECK(esp_ble_gap_start_advertising(&adv_params));
@@ -260,17 +317,8 @@ gatts_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_
         case ESP_GATTS_EXEC_WRITE_EVT:
             handle_exec_write(gatts_if, &param->exec_write);
             break;
-        case ESP_GATTS_MTU_EVT:
-            handle_mtu(gatts_if, &param->mtu);
-            break;
-        case ESP_GATTS_CREATE_EVT:
-            handle_create(gatts_if, &param->create);
-            break;
-        case ESP_GATTS_ADD_CHAR_EVT:
-            handle_add_char(gatts_if, &param->add_char);
-            break;
-        case ESP_GATTS_ADD_CHAR_DESCR_EVT:
-            handle_add_char_descr(gatts_if, &param->add_char_descr);
+        case ESP_GATTS_CREAT_ATTR_TAB_EVT:
+            handle_create_db(gatts_if, &param->add_attr_tab);
             break;
         case ESP_GATTS_CONNECT_EVT:
             handle_connect(gatts_if, &param->connect);
@@ -298,24 +346,45 @@ init_nvs() {
 }
 
 void
-ble_init(void) {
+ble_init(u16 uuid, const ble_impl_t *impl) {
     ESP_LOGI(TAG, "initializing ble...");
+
+    g.uuid = uuid;
+    g.impl = impl;
 
     ESP_ERROR_CHECK(init_nvs());
 
     ESP_ERROR_CHECK(esp_bt_controller_mem_release(ESP_BT_MODE_CLASSIC_BT));
 
-    esp_bt_controller_config_t bt_cfg = BT_CONTROLLER_INIT_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK(esp_bt_controller_init(&bt_cfg));
+    esp_bt_controller_config_t conf = BT_CONTROLLER_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_bt_controller_init(&conf));
     ESP_ERROR_CHECK(esp_bt_controller_enable(ESP_BT_MODE_BLE));
     ESP_ERROR_CHECK(esp_bluedroid_init());
     ESP_ERROR_CHECK(esp_bluedroid_enable());
 
     ESP_ERROR_CHECK(esp_ble_gatts_register_callback(gatts_handler));
     ESP_ERROR_CHECK(esp_ble_gap_register_callback(gap_handler));
+}
 
+ble_char_t *
+ble_add_char(u16 uuid, ble_char_op_t ops, size_t size) {
+    // there is enough space
+    assert(g.chars_count != CHAR_COUNT);
+
+    ble_char_t *_char = &g.chars[g.chars_count++];
+    _char->ops = ops;
+    _char->uuid = uuid;
+    _char->size = size;
+
+    return _char;
+}
+
+void
+ble_start(void) {
     ESP_ERROR_CHECK(esp_ble_gatts_app_register(0));
+}
 
-    // todo: check how to do this
-    // ESP_ERROR_CHECK(esp_ble_gatt_set_local_mtu(MTU));
+esp_err_t
+ble_char_send_notif(ble_char_t *_char, u8 *data) {
+    return esp_ble_gatts_send_indicate(g.gatts_if, g.conn_id, _char->handle, _char->size, data, false);
 }

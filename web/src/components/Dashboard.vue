@@ -1,12 +1,22 @@
 <script setup lang="ts">
 import Chart from '@/components/Chart.vue'
 import { Card, CardHeader, CardDescription, CardTitle, CardContent } from '@/components/ui/card'
+
+import { Button } from '@/components/ui/button'
+import { useESP } from '@/composables/useESP'
+
+const { isMeasVoltage, startVoltageMeas } = useESP()
 </script>
 
 <template>
   <main class="flex gap-8 justify-center items-stretch p-16">
     <div class="flex-2">
-      <Chart />
+      <div v-if="isMeasVoltage">
+        <Chart />
+      </div>
+      <div v-else class="w-full h-full flex justify-center items-center">
+        <Button @click="startVoltageMeas"> Započni merenje </Button>
+      </div>
     </div>
     <div class="flex flex-col gap-8 flex-1">
       <Card class="flex-1">

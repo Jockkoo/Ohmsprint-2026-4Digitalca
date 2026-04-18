@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button'
-import { useBLE } from '@/composables/useBLE.ts'
+import { useESP } from '@/composables/useESP.ts'
 import DarkMode from '@/components/header/DarkMode.vue'
 
-const { loading, isConnected, connect, disconnect } = useBLE()
+const { loadingConnection, isConnected, connect, disconnect } = useESP()
 
 function handleClick() {
   if (isConnected.value) {
     console.log('disconnect')
     disconnect()
-  } else if (!loading.value) {
+  } else if (!loadingConnection.value) {
     console.log('connect')
     connect()
   }
@@ -22,7 +22,7 @@ function handleClick() {
     <div class="flex gap-4">
       <DarkMode />
       <Button @click="handleClick" class="w-fit">
-        <p v-if="loading">Povezivanje...</p>
+        <p v-if="loadingConnection">Povezivanje...</p>
         <p v-else-if="isConnected">Odveži se</p>
         <p v-else>Poveži na ESP32</p>
       </Button>
