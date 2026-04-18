@@ -1,38 +1,53 @@
 <script setup lang="ts">
-import Chart from '@/components/Chart.vue'
-import { Card, CardHeader, CardDescription, CardTitle, CardContent } from '@/components/ui/card'
+import DashboardGeneric from '@/components/DashboardGeneric.vue'
 
-import { Button } from '@/components/ui/button'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+
 import { useESP } from '@/composables/useESP'
 
-const { isMeasVoltage, startVoltageMeas } = useESP()
+const {
+  isMeasCurrent,
+  isMeasVoltage,
+  startCurrentMeas,
+  startVoltageMeas,
+  stopCurrentMeas,
+  stopVoltageMeas,
+  voltageData,
+  currentData,
+  currentMeasPeriodMs,
+  voltageMeasPeriodMs,
+} = useESP()
 </script>
 
 <template>
-  <main class="flex gap-8 justify-center items-stretch p-16">
-    <div class="flex-2">
-      <div v-if="isMeasVoltage">
-        <Chart />
-      </div>
-      <div v-else class="w-full h-full flex justify-center items-center">
-        <Button @click="startVoltageMeas"> Započni merenje </Button>
-      </div>
-    </div>
-    <div class="flex flex-col gap-8 flex-1">
-      <Card class="flex-1">
-        <CardHeader>
-          <CardTitle>Statistika</CardTitle>
-          <CardDescription>Neki opis, ne znam</CardDescription>
-        </CardHeader>
-        <CardContent> *zamislite statistiku ovde* </CardContent>
-      </Card>
-      <Card class="flex-1">
-        <CardHeader>
-          <CardTitle>Podešavanja</CardTitle>
-          <CardDescription>Ovde se moze podesavati sta se i koliko cesto meri etc</CardDescription>
-        </CardHeader>
-        <CardContent> *zamislite kontrole ovde* </CardContent>
-      </Card>
-    </div>
+  <main class="p-8">
+    <Tabs default-value="current" class="w-full flex flex-col gap-8">
+      <TabsList class="w-full h-fit">
+        <TabsTrigger value="current" class="p-2">Struja</TabsTrigger>
+        <TabsTrigger value="voltage" class="p-2">Napon</TabsTrigger>
+      </TabsList>
+      <TabsContent value="current" key="current">
+        <DashboardGeneric
+          what="struje"
+          unit="A"
+          :isMeas="isMeasCurrent"
+          :data="currentData"
+          @start="startCurrentMeas"
+          @stop="stopCurrentMeas"
+          v-model:measPeriodMs="currentMeasPeriodMs"
+        />
+      </TabsContent>
+      <TabsContent value="voltage" key="voltage">
+        <DashboardGeneric
+          what="napona"
+          unit="V"
+          :isMeas="isMeasVoltage"
+          :data="voltageData"
+          @start="startVoltageMeas"
+          @stop="stopVoltageMeas"
+          v-model:measPeriodMs="voltageMeasPeriodMs"
+        />
+      </TabsContent>
+    </Tabs>
   </main>
 </template>
